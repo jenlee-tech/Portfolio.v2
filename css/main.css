@@ -39,7 +39,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #8D8B87;
+    background-color: #000E30;
 
 
 
@@ -94,7 +94,7 @@ li a:hover {
 
 
 .pimg2 {
-    background-image: url("../images/image2.jpg");
+    background-image: url("../images/sepiacrop.jpg");
     min-height: 400px;
 }
 
