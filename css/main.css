@@ -35,6 +35,7 @@ html {
   display: inline-block;
   padding-left: 0.75em;
 }
+
 .navtext {
   float: right;
   display: inline-block;
@@ -74,7 +75,6 @@ li a:hover {
 .pimg2,
 .pimg3 {
   position: relative;
-  opacity: 0.7;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -86,11 +86,14 @@ li a:hover {
 .pimg1 {
   background-image: url("../images/lakeimage.jpeg");
   min-height: 100%;
+  opacity: 0.7;
 }
 
 .pimg2 {
-  background-image: url("../images/sepiacrop.jpg");
+  background-image: url("../images/blacknwhitecopy.jpg");
   min-height: 400px;
+
+
 }
 
 .pimg3 {
@@ -118,7 +121,7 @@ li a:hover {
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 27px;
+  font-size: 2em;
   letter-spacing: 8px;
   text-transform: uppercase;
   font-weight: bold;
@@ -130,6 +133,7 @@ li a:hover {
 }
 
 @media (max-width: 568px) {
+
   .pimg1,
   .pimg2,
   .pimg3 {
@@ -343,4 +347,12 @@ textarea {
 
 .qu-background {
   color: #f7b76b;
+}
+
+#about {
+  padding-top: 3em;
+  padding-left: 3em;
+  color: #000e30;
+  letter-spacing: 5px;
+
 }
