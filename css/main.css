@@ -350,9 +350,12 @@ textarea {
 }
 
 #about {
-  padding-top: 3em;
-  padding-left: 3em;
-  color: #000e30;
+  padding-left: 1.5em;
+  color: white;
   letter-spacing: 5px;
-
+  display: inline-block;
+  background-color: dimgray;
+  margin-top: 2em;
+  margin-left: 2em;
+  padding-right: 1.5em;
 }
