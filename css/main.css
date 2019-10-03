@@ -92,8 +92,6 @@ li a:hover {
 .pimg2 {
   background-image: url("../images/blacknwhitecopy.jpg");
   min-height: 400px;
-
-
 }
 
 .pimg3 {
@@ -133,7 +131,6 @@ li a:hover {
 }
 
 @media (max-width: 568px) {
-
   .pimg1,
   .pimg2,
   .pimg3 {
@@ -351,11 +348,13 @@ textarea {
 
 #about {
   padding-left: 1.5em;
-  color: white;
-  letter-spacing: 5px;
+  color: black;
+  /* letter-spacing: 5px; */
   display: inline-block;
-  background-color: dimgray;
+  background-color: whitesmoke;
   margin-top: 2em;
   margin-left: 2em;
   padding-right: 1.5em;
+  font-family: Poiret none;
+  opacity: 0.7;
 }
