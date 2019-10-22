@@ -364,4 +364,24 @@ textarea {
   font-family: Poiret none;
   opacity: 0.7;
   animation: example2 10s ease-out;
+  border-radius: 10px 40px;
+}
+
+.image-size {
+  height: 110%;
+  width: 65%;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.project-image {
+  text-align: center;
+}
+
+.project-descrip {
+  text-align: left;
+  align-content: center;
+}
+
+.project-title {
+  padding-bottom: 5%;
 }
