@@ -120,13 +120,13 @@ li a:hover {
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 3em;
+  font-size: 18px;
   letter-spacing: 8px;
   text-transform: uppercase;
   font-weight: bold;
 }
 
-.ptext .border {
+.title {
   color: #000e30;
   padding: 20px;
 }
@@ -161,30 +161,10 @@ li a:hover {
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
-/* Add some padding inside the card container */
-.container {
-  padding: 2px 16px;
-}
-
-.card img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*styling for 2 columns*/
-.column2 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
 .column {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  max-width: 40%;
-  padding: 5%;
+  padding: 3%;
+  flex: 50%;
 }
 
 .column img {
@@ -241,14 +221,10 @@ textarea {
 }
 
 /*media queries*/
-@media screen and (max-width: 600px) {
-  .column {
-    max-width: 100%;
-  }
 
-  .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    transition: 0.3s;
+/*this helps columns be responsive when viewport is smaller*/
+@media screen and (max-width: 650px) {
+  .column {
     max-width: 100%;
   }
 
@@ -381,7 +357,10 @@ textarea {
 
 .project-descrip {
   text-align: left;
-  align-content: center;
+}
+
+.project-descrip p {
+  padding: 2em;
 }
 
 .project-title {
@@ -410,5 +389,5 @@ textarea {
 }
 
 .row {
-  padding-bottom: 5em;
+  display: flex;
 }
