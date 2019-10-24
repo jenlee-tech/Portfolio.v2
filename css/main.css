@@ -16,7 +16,7 @@ html {
 
 #nav {
   overflow: hidden;
-  background-color: #000e30;
+  background-color: #031136;
   position: fixed;
   /* Set the navbar to fixed position */
   right: 0;
@@ -91,13 +91,13 @@ li a:hover {
 
 .pimg2 {
   background-image: url("../images/blacknwhitecopy.jpg");
-  min-height: 400px;
+  min-height: 500px;
   padding-top: 5em;
 }
 
 .pimg3 {
-  background-image: url("../images/image3.jpg");
-  min-height: 400px;
+  background-image: url("../images/beachgrass.jpg");
+  min-height: 500px;
 }
 
 .section {
@@ -120,7 +120,7 @@ li a:hover {
   top: 50%;
   width: 100%;
   text-align: center;
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: 8px;
   text-transform: uppercase;
   font-weight: bold;
@@ -233,7 +233,7 @@ textarea {
 }
 
 #contact {
-  background-color: #c8dbea;
+  background-color: #eaf3ff;
 }
 
 .messagestyle * {
@@ -355,27 +355,28 @@ textarea {
 .about {
   padding-left: 1.5em;
   color: black;
-  /* letter-spacing: 5px; */
   display: inline-block;
   background-color: whitesmoke;
-  margin-top: 2em;
-  margin-left: 2em;
+  margin-top: 0.5em;
+  margin-left: 7em;
   padding-right: 1.5em;
+  padding-top: 0.5em;
   font-family: Poiret none;
   opacity: 0.7;
-  animation: example2 10s ease-out;
+  transition-timing-function: ease;
   border-radius: 10px 40px;
   font-weight: 600;
+  font-size: 2em;
 }
 
 .image-size {
-  height: 110%;
-  width: 65%;
+  height: 100%;
+  width: 100%;
   box-shadow: 5px 5px 5px #aaaaaa;
 }
 
 .project-image {
-  text-align: center;
+  text-align: right;
 }
 
 .project-descrip {
@@ -406,4 +407,8 @@ textarea {
   transition: all 0.6s cubic-bezier(0.19, 1, 0.22, 1);
   font-size: 1.5em;
   text-transform: uppercase;
+}
+
+.row {
+  padding-bottom: 5em;
 }
