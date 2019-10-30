@@ -360,9 +360,15 @@ textarea {
   padding: 2em;
 }
 
-.project-title {
+.projecth1 {
   padding-bottom: 5%;
-  padding-top: 8%;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.project-title {
+  font-weight: 600;
+  font-size: 1.25em;
 }
 
 .slanted {
