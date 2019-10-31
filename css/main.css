@@ -129,6 +129,7 @@ li a:hover {
 }
 
 @media (max-width: 568px) {
+
   .pimg1,
   .pimg2,
   .pimg3 {
@@ -326,13 +327,13 @@ textarea {
 }
 
 .about {
-  padding-left: 1.5em;
+  padding-left: 1.25em;
   color: black;
   display: inline-block;
   background-color: whitesmoke;
   margin-top: 0.5em;
-  margin-left: 7em;
-  padding-right: 1.5em;
+  margin-left: 5em;
+  padding-right: 1em;
   padding-top: 0.5em;
   font-family: Poiret none;
   opacity: 0.7;
@@ -353,11 +354,13 @@ textarea {
 }
 
 .project-descrip {
-  text-align: left;
+  text-align: center;
+  display: inline-block;
 }
 
 .project-descrip p {
-  padding: 2em;
+  padding: 1em;
+  text-align: left;
 }
 
 .projecth1 {
