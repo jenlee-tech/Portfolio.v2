@@ -230,6 +230,20 @@ textarea {
   vertical-align: middle;
 }
 
+.copyright {
+  position: absolute;
+  top: 95%;
+  right: 8%;
+  width: 100%;
+  text-align: right;
+  font-size: x-small;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+
+
 /*media queries*/
 
 /*this helps columns be responsive when viewport is smaller*/
@@ -359,6 +373,10 @@ textarea {
   height: 100%;
   width: 100%;
   box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+#projects {
+  padding-bottom: 5em;
 }
 
 .project-image {
