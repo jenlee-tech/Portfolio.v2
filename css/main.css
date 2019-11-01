@@ -38,7 +38,7 @@ html {
   display: inline-block;
 }
 
-ul {
+.navtext ul {
   display: inline-flex;
   list-style-type: none;
   margin: 0;
@@ -47,11 +47,11 @@ ul {
   background-color: #000e30;
 }
 
-li {
+.navtext li {
   float: left;
 }
 
-li a {
+.navtext li a {
   display: block;
   color: white;
   text-align: center;
@@ -62,7 +62,7 @@ li a {
 }
 
 /* Change the link color to #111 (black) on hover */
-li a:hover {
+.navtext li a:hover {
   background-color: #c0c0c0;
 }
 
@@ -373,6 +373,23 @@ textarea {
   font-weight: 600;
   font-size: 1.25em;
 }
+
+
+.techstack {
+  display: inline-flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+
+.techstack li {
+  float: left;
+  padding-right: 1.5em;
+}
+
 
 .slanted {
   height: 500px;
