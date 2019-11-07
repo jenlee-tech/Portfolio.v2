@@ -130,8 +130,8 @@ html {
   top: 45%;
   width: 100%;
   text-align: center;
-  font-size: 2.5em;
-  letter-spacing: 0.1em;
+  font-size: 3em;
+  letter-spacing: 0.3em;
   /*text-transform: uppercase;*/
   font-weight: 900;
   font-family: "Great Vibes";
@@ -140,7 +140,7 @@ html {
 .title {
   color: #000e30;
   top: 30%;
-  font-family: "Cormorant";
+  font-family: "Serif";
   text-transform: uppercase;
 }
 
@@ -150,39 +150,6 @@ html {
   .pimg3 {
     background-attachment: scroll;
   }
-}
-
-/*styling for the cards*/
-
-.section-flex {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-  align-content: space-between;
-}
-
-.card {
-  /* Add shadows to create the "card" effect */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  max-width: 30%;
-}
-
-/* On mouse-over, add a deeper shadow */
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.column {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 3%;
-  flex: 50%;
-}
-
-.column img {
-  max-width: 100%;
-  height: auto;
 }
 
 /*button styling*/
@@ -378,6 +345,17 @@ textarea {
   font-family: "Cormorant";
   margin-right: 1.5em;
   margin-left: 1.5em;
+}
+
+.column {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 3%;
+  flex: 50%;
+}
+
+.column img {
+  max-width: 100%;
+  height: auto;
 }
 
 .project-image {
