@@ -34,6 +34,9 @@ html {
   width: 100%;
   /* Full width */
   text-align: end;
+  -webkit-box-shadow: 0 3px 6px 6px gray;
+  -moz-box-shadow: 0 3px 6px 6px gray;
+  box-shadow: 0 3px 6px 6px gray;
 }
 
 .mediaicons {
