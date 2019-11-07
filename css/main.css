@@ -101,7 +101,7 @@ html {
 
 .pimg2 {
   background-image: url("../images/blacknwhitecopy.jpg");
-  min-height: 500px;
+  min-height: 100%;
   padding-top: 5em;
 }
 
@@ -322,7 +322,7 @@ textarea {
   color: black;
   display: inline-block;
   background-color: whitesmoke;
-  margin-top: 0.5em;
+  margin-top: 2.5em;
   margin-left: 5em;
   padding-right: 1em;
   padding-top: 0.5em;
