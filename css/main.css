@@ -306,8 +306,7 @@ textarea {
 }
 
 .image-size {
-  height: 100%;
-  width: 100%;
+  max-width: 100%;
   box-shadow: 5px 5px 5px #aaaaaa;
 }
 
@@ -326,9 +325,10 @@ textarea {
 
 .column {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  padding: 3%;
-  width: 50%;
+  /*padding: 3%;
+  width: 50%;*/
 }
+
 
 .column img {
   max-width: 100%;
@@ -396,6 +396,22 @@ textarea {
   border: 2px solid #fff;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 1.5em;
+  border: 1px solid red;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 
 
@@ -415,7 +431,6 @@ textarea {
     width: 100%;
     text-align: center;
     letter-spacing: 4px;
-
     font-size: x-large;
   }
 
@@ -433,6 +448,48 @@ textarea {
     flex-direction: column;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ptext {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 4px;
+    font-size: x-large;
+  }
+}
+
+/*
+@media only screen and (max-width: 1205px) {
+  .image-size {
+    height: 80%;
+    width: 80%;
+    box-shadow: 3px 3px 3px #aaaaaa;
+  }
+
+
+
+}
+*/
+
+
+
+
+
 
 
 @media (max-width: 568px) {
