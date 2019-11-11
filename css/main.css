@@ -23,7 +23,8 @@ html {
 
 #nav {
   overflow: hidden;
-  background-color: #031136;
+  /*background-color: #031136;*/
+  background-color: #254F5B;
   position: fixed;
   /* Set the navbar to fixed position */
   right: 0;
@@ -60,7 +61,8 @@ html {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #000e30;
+  /*background-color: #000e30;*/
+  background-color: #254F5B;
 }
 
 .navtext li {
@@ -79,7 +81,9 @@ html {
 
 /* Change the link color to #111 (black) on hover */
 .navtext li a:hover {
-  background-color: #c0c0c0;
+  /*background-color: #c0c0c0;*/
+  background-color: #E5DAC8;
+  color: black;
 }
 
 /*styling for parallax effect*/
@@ -139,11 +143,18 @@ html {
   font-family: "Great Vibes";
 }
 
-.title {
+.contactme {
   color: #000e30;
   top: 30%;
   font-family: "Serif";
   text-transform: uppercase;
+  font-size: 2em;
+  position: absolute;
+  top: 45%;
+  width: 100%;
+  text-align: center;
+  letter-spacing: 0.3em;
+  font-weight: 900;
 }
 
 /*button styling*/
@@ -353,7 +364,7 @@ textarea {
   padding-bottom: 4%;
   padding-top: 5%;
   text-align: center;
-  font-size: -webkit-xxx-large;
+  font-size: xx-large;
 }
 
 .project-title {
