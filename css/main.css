@@ -332,6 +332,7 @@ textarea {
 
 .row {
   display: flex;
+  justify-content: center;
 }
 
 .column {
@@ -353,10 +354,11 @@ textarea {
 .project-descrip {
   text-align: center;
   display: inline-block;
+
 }
 
 .project-descrip p {
-  padding: 1em;
+  padding: .75em;
   text-align: left;
 }
 
@@ -370,6 +372,7 @@ textarea {
 .project-title {
   font-weight: 600;
   font-size: 1.25em;
+  padding-top: 1.5em;
 }
 
 .techstack {
@@ -414,14 +417,15 @@ textarea {
 
 [class*="col-"] {
   float: left;
-  padding: 1.5em;
-  border: 1px solid red;
+  padding: 2em;
+  border: none;
 }
 
 .row::after {
   content: "";
   clear: both;
   display: table;
+
 }
 
 
@@ -457,6 +461,8 @@ textarea {
   .row {
     display: flex;
     flex-direction: column;
+
+
   }
 }
 
