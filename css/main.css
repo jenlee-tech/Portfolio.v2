@@ -73,7 +73,7 @@ html {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 14px;
   text-decoration: none;
   font-size: large;
   letter-spacing: 2px;
@@ -433,7 +433,7 @@ textarea {
 
 /*media queries*/
 
-/*this helps columns be responsive when viewport is smaller*/
+/*for mobile phones*/
 @media screen and (max-width: 450px) {
   .column {
     width: 100%;
@@ -448,6 +448,8 @@ textarea {
     letter-spacing: 4px;
     font-size: x-large;
   }
+
+
 
   .section {
     text-align: left;
@@ -469,7 +471,7 @@ textarea {
 
 @media only screen and (max-width: 768px) {
 
-  /* For mobile phones: */
+  /* For IPADS or mid-size devices: */
   [class*="col-"] {
     width: 100%;
 
@@ -482,11 +484,11 @@ textarea {
 
   .ptext {
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: 100%;
     text-align: center;
     letter-spacing: 4px;
-    font-size: x-large;
+    font-size: xx-large;
   }
 
   .about {
