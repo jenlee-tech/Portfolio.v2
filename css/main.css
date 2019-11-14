@@ -10,6 +10,12 @@ html {
   overflow: scroll;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
+
 ::-webkit-scrollbar {
   width: 0px;
   /* Remove scrollbar space */
@@ -172,19 +178,6 @@ div button {
   /* Add a dark-grey background on hover */
 }
 
-/*styling for form*/
-input[type="text"],
-textarea {
-  width: 75%;
-  padding: 5px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 20px;
-  resize: vertical;
-}
-
 .container2 {
   border-radius: 10px;
   background-color: #c8dbea;
@@ -322,18 +315,79 @@ textarea {
 }
 
 #projects {
+  display: grid;
+  align-items: center;
   padding-bottom: 5em;
   font-family: "Cormorant";
   margin-right: 1.5em;
   margin-left: 1.5em;
-  display: flex;
-  flex-direction: column;
+  grid-column-gap: .5em;
+  grid-row-gap: 1em;
+  justify-content: center;
+
 }
 
-.row {
-  display: flex;
-  justify-content: center;
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
 
 .column {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
@@ -410,9 +464,6 @@ textarea {
   border: 2px solid #fff;
 }
 
-* {
-  box-sizing: border-box;
-}
 
 
 [class*="col-"] {
@@ -428,16 +479,58 @@ textarea {
 
 }
 
+.proj1-image {
+  grid-area: proj1image;
+}
 
+.proj1-descrip {
+  grid-area: proj1descrip;
+}
+
+.proj2-image {
+  grid-area: proj2image;
+}
+
+.proj2-descrip {
+  grid-area: proj2descrip;
+}
+
+.proj3-image {
+  grid-area: proj3image;
+}
+
+.proj3-descrip {
+  grid-area: proj3descrip;
+}
+
+.proj4-image {
+  grid-area: proj4image;
+}
+
+.proj4-descrip {
+  grid-area: proj4descrip;
+}
 
 
 /*media queries*/
 
 /*for mobile phones*/
 @media screen and (max-width: 450px) {
-  .column {
+  /*.column {
     width: 100%;
     margin: 0;
+  }*/
+
+  .row1 {
+    display: grid;
+  }
+
+  .proj1-image {
+    grid-row-start: 1;
+  }
+
+  .proj1-descrip {
+    grid-row-start: 2;
   }
 
   .ptext {
@@ -448,34 +541,30 @@ textarea {
     letter-spacing: 4px;
     font-size: x-large;
   }
-
-
-
-  .section {
-    text-align: left;
-    padding-top: 6em;
-  }
-
-  .section {
-    padding: 0;
-  }
-
-  .row {
-    display: flex;
-    flex-direction: column;
-
-
-  }
 }
 
 
 @media only screen and (max-width: 768px) {
 
-  /* For IPADS or mid-size devices: */
+  /* For IPADS or tablets: */
   [class*="col-"] {
     width: 100%;
+  }
+
+  #projects {
+    display: grid;
+    grid-template-columns: 2fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+
+
 
   }
+
+  .image-remove {
+    display: none;
+  }
+
 
   .row {
     display: flex;
@@ -509,24 +598,6 @@ textarea {
   }
 
 }
-
-/*
-@media only screen and (max-width: 1205px) {
-  .image-size {
-    height: 80%;
-    width: 80%;
-    box-shadow: 3px 3px 3px #aaaaaa;
-  }
-
-
-
-}
-*/
-
-
-
-
-
 
 
 @media (max-width: 568px) {
