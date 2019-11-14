@@ -1,3 +1,10 @@
+/*this is for the grid system in css*/
+* {
+  box-sizing: border-box;
+
+}
+
+
 body,
 html {
   height: 100%;
@@ -8,10 +15,6 @@ html {
   flex-direction: column;
   scroll-behavior: smooth;
   overflow: scroll;
-}
-
-* {
-  box-sizing: border-box;
 }
 
 
@@ -314,6 +317,7 @@ textarea {
   box-shadow: 5px 5px 5px #aaaaaa;
 }
 
+/*
 #projects {
   display: grid;
   align-items: center;
@@ -324,15 +328,16 @@ textarea {
   grid-column-gap: .5em;
   grid-row-gap: 1em;
   justify-content: center;
-
+}
+*/
+#projects {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 450px);
+  grid-gap: 50px;
+  margin: 70px;
 }
 
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
 
 [class*="col-"] {
   float: left;
@@ -472,13 +477,6 @@ textarea {
   border: none;
 }
 
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-
-}
-
 .proj1-image {
   grid-area: proj1image;
 }
@@ -521,17 +519,6 @@ textarea {
     margin: 0;
   }*/
 
-  .row1 {
-    display: grid;
-  }
-
-  .proj1-image {
-    grid-row-start: 1;
-  }
-
-  .proj1-descrip {
-    grid-row-start: 2;
-  }
 
   .ptext {
     position: absolute;
@@ -561,11 +548,6 @@ textarea {
     display: none;
   }
 
-
-  .row {
-    display: flex;
-    flex-direction: column;
-  }
 
   .ptext {
     position: absolute;
