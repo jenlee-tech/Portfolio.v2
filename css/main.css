@@ -313,8 +313,9 @@ textarea {
 }
 
 .image-size {
-  max-width: 100%;
+  width: 100%;
   box-shadow: 5px 5px 5px #aaaaaa;
+  height: auto;
 }
 
 /*
@@ -339,82 +340,6 @@ textarea {
 }
 
 
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-
-.col-1 {
-  width: 8.33%;
-}
-
-.col-2 {
-  width: 16.66%;
-}
-
-.col-3 {
-  width: 25%;
-}
-
-.col-4 {
-  width: 33.33%;
-}
-
-.col-5 {
-  width: 41.66%;
-}
-
-.col-6 {
-  width: 50%;
-}
-
-.col-7 {
-  width: 58.33%;
-}
-
-.col-8 {
-  width: 66.66%;
-}
-
-.col-9 {
-  width: 75%;
-}
-
-.col-10 {
-  width: 83.33%;
-}
-
-.col-11 {
-  width: 91.66%;
-}
-
-.col-12 {
-  width: 100%;
-}
-
-
-.column {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  /*padding: 3%;
-  width: 50%;*/
-}
-
-
-.column img {
-  max-width: 100%;
-  height: auto;
-}
-
-.project-image {
-  text-align: right;
-}
-
-.project-descrip {
-  text-align: center;
-  display: inline-block;
-
-}
 
 .project-descrip p {
   padding: .75em;
@@ -471,53 +396,23 @@ textarea {
 
 
 
-[class*="col-"] {
-  float: left;
-  padding: 2em;
-  border: none;
-}
 
-.proj1-image {
-  grid-area: proj1image;
-}
-
-.proj1-descrip {
-  grid-area: proj1descrip;
-}
-
-.proj2-image {
-  grid-area: proj2image;
-}
-
-.proj2-descrip {
-  grid-area: proj2descrip;
-}
-
-.proj3-image {
-  grid-area: proj3image;
-}
-
-.proj3-descrip {
-  grid-area: proj3descrip;
-}
-
-.proj4-image {
-  grid-area: proj4image;
-}
-
-.proj4-descrip {
-  grid-area: proj4descrip;
-}
 
 
 /*media queries*/
 
 /*for mobile phones*/
-@media screen and (max-width: 450px) {
-  /*.column {
+@media screen and (min-width: 360px) {
+  [class*="col-"] {
     width: 100%;
-    margin: 0;
-  }*/
+  }
+
+
+  #projects {
+    grid-template-columns: repeat(2, minmax(175px, 360px));
+    grid-gap: 10px;
+    margin: 10px;
+  }
 
 
   .ptext {
@@ -538,10 +433,17 @@ textarea {
     width: 100%;
   }
 
+  /*
   #projects {
     display: grid;
-    grid-template-columns: 2fr;
-    padding: 1em;
+    grid-template-columns: repeat(2, 350px);
+    grid-gap: 10px;
+  }*/
+
+  #projects {
+    grid-template-columns: repeat(2, minmax(150px, 450px));
+    grid-gap: 25px;
+    margin: 25px;
   }
 
   .image-remove {
