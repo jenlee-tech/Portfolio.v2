@@ -403,14 +403,15 @@ textarea {
 /*media queries*/
 
 /*for mobile phones*/
-@media screen and (min-width: 360px) {
+@media screen and (min-width: 300px) {
   [class*="col-"] {
     width: 100%;
   }
 
 
   #projects {
-    grid-template-columns: repeat(2, minmax(175px, 360px));
+    /*grid-template-columns: repeat(2, minmax(175px, 300px));*/
+    grid-template-columns: 150px 150px;
     grid-gap: 10px;
     margin: 10px;
   }
