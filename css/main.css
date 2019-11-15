@@ -82,7 +82,7 @@ html {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 14px;
+  padding: 14px 12px;
   text-decoration: none;
   font-size: large;
   letter-spacing: 2px;
@@ -393,7 +393,6 @@ textarea {
   color: black;
   border: 2px solid #fff;
 }
-
 
 
 
