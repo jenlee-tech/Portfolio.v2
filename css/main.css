@@ -316,7 +316,6 @@ textarea {
   width: 100%;
   box-shadow: 5px 5px 5px #aaaaaa;
   height: auto;
-  padding-top: 2.5em;
 }
 
 /*
@@ -403,7 +402,7 @@ textarea {
 /*media queries*/
 
 /*for mobile phones*/
-@media screen and (min-width: 300px) {
+@media screen and (max-width: 300px) {
   [class*="col-"] {
     width: 100%;
   }
@@ -449,11 +448,21 @@ textarea {
     font-size: large;
   }
 
+  .navtext li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: medium;
+    letter-spacing: 2px;
+  }
+
 
 }
 
 
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
 
   /* For IPADS or tablets: */
   [class*="col-"] {
