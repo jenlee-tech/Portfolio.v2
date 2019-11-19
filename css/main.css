@@ -157,12 +157,12 @@ html {
   top: 30%;
   font-family: "Serif";
   text-transform: uppercase;
-  font-size: 1.7em;
+  font-size: xx-large;
   position: absolute;
   top: 45%;
   width: 100%;
   text-align: center;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.2em;
   font-weight: 1000;
 
 }
@@ -387,7 +387,7 @@ textarea {
   color: black;
   border: 2px solid #fff;
   background-color: #A7CBC7;
-  color: white;
+  color: black;
   ;
 }
 
