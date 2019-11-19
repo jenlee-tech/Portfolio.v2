@@ -321,7 +321,7 @@ textarea {
 #projects {
   display: grid;
   justify-content: center;
-  grid-template-columns: repeat(2, 450px);
+  grid-template-columns: repeat(2, 400px);
   grid-gap: 5%;
   margin-bottom: 20%;
 }
@@ -337,6 +337,7 @@ textarea {
   padding-top: 6%;
   text-align: center;
   font-size: xx-large;
+  padding-bottom: 2%;
 }
 
 .project-title {
