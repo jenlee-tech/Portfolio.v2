@@ -84,7 +84,7 @@ html {
   text-align: center;
   padding: 12px 12px;
   text-decoration: none;
-  font-size: large;
+  font-size: x-large;
   letter-spacing: 2px;
 }
 
@@ -318,19 +318,6 @@ textarea {
   height: auto;
 }
 
-/*
-#projects {
-  display: grid;
-  align-items: center;
-  padding-bottom: 5em;
-  font-family: "Cormorant";
-  margin-right: 1.5em;
-  margin-left: 1.5em;
-  grid-column-gap: .5em;
-  grid-row-gap: 1em;
-  justify-content: center;
-}
-*/
 #projects {
   display: grid;
   justify-content: center;
@@ -347,8 +334,7 @@ textarea {
 }
 
 #projecth1 {
-
-  padding-top: 8%;
+  padding-top: 6%;
   text-align: center;
   font-size: xx-large;
 }
@@ -399,38 +385,20 @@ textarea {
 
 
 
-/*media queries*/
+/*MEDIA QUERIES*/
 
-/*for mobile phones*/
-
-
-
+/*For IPADS/TABLETS*/
 @media only screen and (max-width: 768px) {
-
-  /* For IPADS or tablets: */
   [class*="col-"] {
     width: 100%;
   }
 
-
   #projects {
-    /*grid-template-columns: repeat(2, minmax(150px, 768px));*/
     grid-template-columns: 350px 350px;
     grid-column-gap: 3em;
     grid-row-gap: 2em;
     padding: 1.5em;
   }
-
-
-
-
-
-
-
-  .image-remove {
-    display: none;
-  }
-
 
   .ptext {
     position: absolute;
@@ -457,20 +425,25 @@ textarea {
     font-weight: 600;
     font-size: 1.5em;
   }
-
 }
 
-
-@media (max-width: 568px) {
-
-  .pimg1,
-  .pimg2,
-  .pimg3 {
-    background-attachment: scroll;
+/*FOR UNUSUAL SCREENS*/
+@media screen and (min-width: 425px) and (max-width: 700px) {
+  [class*="col-"] {
+    width: 100%;
   }
+
+  #projects {
+    grid-template-columns: 200px 200px;
+    grid-gap: 10px;
+    margin: 10px;
+  }
+
 }
 
 
+
+/*FOR SMARTPHONES*/
 @media screen and (max-width: 425px) {
   [class*="col-"] {
     width: 100%;
@@ -478,7 +451,6 @@ textarea {
 
 
   #projects {
-    /*grid-template-columns: repeat(2, minmax(175px, 300px));*/
     grid-template-columns: 150px 150px;
     grid-gap: 10px;
     margin: 10px;
