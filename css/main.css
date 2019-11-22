@@ -117,8 +117,8 @@ html {
 }
 
 .pimg2 {
-  /*background-image: url("../images/blacknwhitecopy.jpg");*/
-  background-image: url("../images/picofmewithblur.jpg");
+  background-image: url("../images/blacknwhitecopy.jpg");
+  /*background-image: url("../images/picofmewithblur.jpg");*/
   min-height: 100%;
   padding-top: 5em;
 }
