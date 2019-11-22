@@ -329,7 +329,7 @@ textarea {
 #projects {
   display: grid;
   justify-content: center;
-  grid-template-columns: auto auto;
+  grid-template-columns: 450px 450px;
   grid-gap: 5%;
   margin-bottom: 20%;
 }
