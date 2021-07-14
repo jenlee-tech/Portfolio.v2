@@ -367,6 +367,14 @@ textarea {
     order: 8;
 }
 
+.box9 {
+    order: 9;
+}
+
+.box10 {
+    order: 10;
+}
+
 .project-descrip p {
     padding: .75em;
     text-align: left;
