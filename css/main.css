@@ -142,6 +142,10 @@ html {
     color: #ddd;
 }
 
+br {
+    line-height: 2em;
+}
+
 .ptext {
     position: absolute;
     top: 45%;
